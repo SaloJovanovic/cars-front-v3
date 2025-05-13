@@ -1,0 +1,147 @@
+body {
+  background: #ffff;
+  color: #5e5e5e !important;
+  .container {
+    display: flex;
+    flex-direction: column;
+    .header {
+      margin: 10px 0 0 0;
+      font-size: 1.5rem;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      .card {
+        margin: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 14px);
+        outline: 1px solid #eaeaea;
+        position: relative;
+        .phoneButton {
+          position: absolute;
+          top: 40px;
+          right: 10px;
+          background-color: #28a745; // zelena
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          cursor: pointer;
+          z-index: 10;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          transition: background 0.3s ease;
+        
+          &:hover {
+            background-color: #218838;
+          }
+        }
+        
+        .disabled {
+          background-color: #555;
+          cursor: not-allowed;
+          opacity: 0.6;
+        
+          &:hover {
+            background-color: #555;
+          }
+        }  
+        .imageContainer {
+          margin: 7px 7px 0 7px;
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          .image {
+            width: 100%;
+            max-width: 160px;
+            aspect-ratio: 3/2;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        .content {
+          margin: 7px 7px 7px 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          text-align: left;
+          .title {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+          }
+          .mileage {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            p {
+              margin: 0;
+              font-weight: bold;
+              color: black;
+            }
+            h3 {
+              margin: 0;
+              font-size: 1rem;
+              font-weight: normal;
+            }
+          }
+          .location {
+            margin-top: 10px;
+            color: #5e5e5e;
+            display: flex;
+            align-items: center;
+            svg {
+              margin-right: 5px;
+            }
+          }
+          .date {
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
+          .power {
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
+          .price {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            a {
+              display: flex;
+              align-items: center;
+              color: whitesmoke;
+              text-decoration: none;
+            }
+
+            .link {
+              margin: 3px;
+              color: whitesmoke;
+              background-color: blue;
+              font-size: 1rem;
+
+              padding: 10px 20px;
+              text-decoration: none;
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
